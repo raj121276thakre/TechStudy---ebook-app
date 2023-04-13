@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_bottom_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@id/downloadsFragment"
+        android:name="com.rajapps.TechStudy.Fragments.DownloadsFragment"
+        android:label="fragment_downloads"
+        tools:layout="@layout/fragment_downloads" />
+    <fragment
+        android:id="@id/settingsFragment"
+        android:name="com.rajapps.TechStudy.Fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@id/homeFragment"
+        android:name="com.rajapps.TechStudy.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+
+</navigation>

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1032063929740",
+    "firebase_url": "https://admin-ebook-default-rtdb.firebaseio.com",
+    "project_id": "admin-ebook",
+    "storage_bucket": "admin-ebook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032063929740:android:092645997fe76dca3e5aa9",
+        "android_client_info": {
+          "package_name": "com.rajapps.TechStudy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032063929740-ed7fesnp49lj5tk7m24bkr12p8sfb6bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmDWx0GLb3Cz6lPgkMSC-0aFVE-6Jix3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032063929740-ed7fesnp49lj5tk7m24bkr12p8sfb6bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032063929740:android:a19837ab6ab3c9853e5aa9",
+        "android_client_info": {
+          "package_name": "com.rajapps.adminebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032063929740-ed7fesnp49lj5tk7m24bkr12p8sfb6bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmDWx0GLb3Cz6lPgkMSC-0aFVE-6Jix3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032063929740-ed7fesnp49lj5tk7m24bkr12p8sfb6bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032063929740:android:f4088f087816b5f03e5aa9",
+        "android_client_info": {
+          "package_name": "com.rajapps.ebookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032063929740-ed7fesnp49lj5tk7m24bkr12p8sfb6bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmDWx0GLb3Cz6lPgkMSC-0aFVE-6Jix3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032063929740-ed7fesnp49lj5tk7m24bkr12p8sfb6bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,6 +9,11 @@ import com.rajapps.TechStudy.databinding.ActivityDetailsBinding
 class DetailsActivity : AppCompatActivity() {
     val activity = this
     lateinit var binding: ActivityDetailsBinding
+
+    // book id
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
@@ -17,6 +22,7 @@ class DetailsActivity : AppCompatActivity() {
         val bookDesc = intent.getStringExtra("book_desc").toString()
         val bookPDF = intent.getStringExtra("book_pdf").toString()
         val bookImage = intent.getIntExtra("book_image", 0)
+
 
         binding.apply {
             mBookTitle.text = bookTitle

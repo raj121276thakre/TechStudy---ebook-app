@@ -6,6 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/app_bottom_nav" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="12dp"
+        app:menu="@menu/bottom_menu"
+        app:backgroundColor="@color/purple_500"
+        app:indicatorRadius="8dp"
+        app:textSize="14sp"
+        app:iconMargin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:iconSize="24dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mRecyclerViewHome"
         android:layout_width="match_parent"
