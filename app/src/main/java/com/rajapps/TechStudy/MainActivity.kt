@@ -1,7 +1,7 @@
 package com.rajapps.TechStudy
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.rajapps.TechStudy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //supportActionBar!!.hide()
 
         binding.apply {
             mRecyclerViewHome.adapter = adapter
