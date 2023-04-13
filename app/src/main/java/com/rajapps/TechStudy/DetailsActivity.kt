@@ -1,9 +1,9 @@
-package com.rajapps.ebookifi
+package com.rajapps.TechStudy
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.rajapps.ebookifi.databinding.ActivityDetailsBinding
+import com.rajapps.TechStudy.databinding.ActivityDetailsBinding
 
 
 class DetailsActivity : AppCompatActivity() {

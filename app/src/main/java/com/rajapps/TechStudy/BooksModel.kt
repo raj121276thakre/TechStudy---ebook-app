@@ -1,4 +1,4 @@
-package com.rajapps.ebookifi
+package com.rajapps.TechStudy
 
 data class BooksModel(
     val image: Int,

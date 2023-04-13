@@ -1,4 +1,4 @@
-package com.rajapps.ebookifi
+package com.rajapps.TechStudy
 
 import org.junit.Test
 

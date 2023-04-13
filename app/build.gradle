@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace 'com.rajapps.ebookifi'
+    namespace 'com.rajapps.TechStudy'
     compileSdk 33
 
     defaultConfig {
         buildFeatures{
             viewBinding true
         }
-        applicationId "com.rajapps.ebookifi"
+        applicationId "com.rajapps.TechStudy"
         minSdk 23
         targetSdk 33
         versionCode 1

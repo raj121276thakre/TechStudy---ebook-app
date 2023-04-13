@@ -1,9 +1,9 @@
-package com.rajapps.ebookifi
+package com.rajapps.TechStudy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import com.rajapps.ebookifi.databinding.ActivityPdfBinding
+import com.rajapps.TechStudy.databinding.ActivityPdfBinding
 
 
 class PdfActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.rajapps.ebookifi
+package com.rajapps.TechStudy
 
 import android.app.Activity
 import android.content.Context
@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.rajapps.ebookifi.databinding.LayoutHomeBinding
+import com.rajapps.TechStudy.databinding.LayoutHomeBinding
+
+
 
 class BooksAdapter(val list:ArrayList<BooksModel>, val context: Context):RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
 

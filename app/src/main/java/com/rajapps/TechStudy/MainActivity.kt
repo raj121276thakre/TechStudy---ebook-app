@@ -1,8 +1,8 @@
-package com.rajapps.ebookifi
+package com.rajapps.TechStudy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.rajapps.ebookifi.databinding.ActivityMainBinding
+import com.rajapps.TechStudy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
