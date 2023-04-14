@@ -1,60 +1,56 @@
 package com.rajapps.TechStudy.Fragments
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.rajapps.TechStudy.BooksAdapter
+import com.rajapps.TechStudy.BooksModel
 import com.rajapps.TechStudy.R
+import com.rajapps.TechStudy.databinding.FragmentHomeBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
+    private lateinit var adapter: BooksAdapter
+    private val list: ArrayList<BooksModel> = ArrayList()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        adapter = BooksAdapter(list, requireContext())
+
+        binding.apply {
+            mRecyclerViewHome.adapter = adapter
+            list.add(BooksModel(R.drawable.m3_nirali, "M3 Nirali", getString(R.string.M3), "m3_book.pdf"))
+            list.add(BooksModel(R.drawable.book_1, "Rich Dad Poor Dad", getString(R.string.description_1), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_2, "Atomic Habits", getString(R.string.description_2), "se_bank.pdf"))
+            list.add(BooksModel(R.drawable.book_3, "Best Self", getString(R.string.description_3), "se_bank.pdf"))
+            list.add(BooksModel(R.drawable.book_4, "How To Be Fine", getString(R.string.description_4), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_5, "Out of the Box", getString(R.string.description_5), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_6, "Stripped", getString(R.string.description_6), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_7, "12 Rules for Life", getString(R.string.description_7), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_8, "Readistan", getString(R.string.description_8), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_9, "Reclaim Your Heart", getString(R.string.description_9), "sample_book.pdf"))
+            list.add(BooksModel(R.drawable.book_10, "Lost Islamic History", getString(R.string.description_10), "sample_book.pdf"))
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
